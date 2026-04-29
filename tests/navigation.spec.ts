@@ -17,6 +17,9 @@ test("nav links work", async ({ page }) => {
 
   await page.click("#nav-contact");
   await expect(page.locator("#contact-hero")).toBeVisible();
+
+  await page.click("#nav-settings");
+  await expect(page.locator("#settings-hero")).toBeVisible();
 });
 
 test("blog post page loads", async ({ page }) => {
@@ -24,4 +27,14 @@ test("blog post page loads", async ({ page }) => {
   await page.click("#post-link-welcome-to-cyberfeedforward");
   await expect(page.locator("#blog-post-hero")).toBeVisible();
   await expect(page.locator("#blog-post")).toBeVisible();
+});
+
+test("theme toggle persists", async ({ page }) => {
+  await page.goto("/settings");
+
+  await page.click("#settings-theme-toggle");
+  await expect(page.locator("html")).toHaveClass(/dark/);
+
+  await page.reload();
+  await expect(page.locator("html")).toHaveClass(/dark/);
 });

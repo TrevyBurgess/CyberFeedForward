@@ -6,7 +6,8 @@ const navItems = [
   { id: "nav-home", href: "/", label: "Home" },
   { id: "nav-about", href: "/about", label: "About" },
   { id: "nav-blog", href: "/blog", label: "Blog" },
-  { id: "nav-contact", href: "/contact", label: "Contact" }
+  { id: "nav-contact", href: "/contact", label: "Contact" },
+  { id: "nav-settings", href: "/settings", label: "Settings" }
 ] as const;
 
 export function SiteHeader() {

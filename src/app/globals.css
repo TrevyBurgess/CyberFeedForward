@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: dark;
-}
-
 html,
 body {
   height: 100%;
 }
 
 body {
+  @apply bg-white text-slate-950;
+}
+
+.dark body {
   @apply bg-slate-950 text-slate-100;
 }
