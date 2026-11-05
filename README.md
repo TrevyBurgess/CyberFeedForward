@@ -1,7 +1,7 @@
 # CyberFeedForward
 Web site for CyberFeedForward
 
-- Create the scaffolding for a multi-page responsive web site. Use Next.js + TypeScript + Tailwind CSS + a headless CMS if needed + Playwright for testing + Vercel for deployment. Name the app CyberFeedForward
+- Create the scaffolding for a multi-page responsive web site. Use Next.js, TypeScript, Tailwind CSS, a headless CMS if needed, Playwright for testing, and + Vercel for deployment. Name the app CyberFeedForward
 
 ## Local development
 
